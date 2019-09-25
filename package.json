@@ -1,12 +1,12 @@
 {
   "name": "shared-types",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "shared types between client and server (flow)",
   "main": "lib/index.js",
   "scripts": {
     "flow:test:code": "npx flow .",
     "eslint:test:code": "npx eslint .",
-    "build": "npx babel src/index.js --out-file lib/index.js"
+    "build": "rm -r lib && npx parcel build src/index.js --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "eslint": "^6.4.0",
     "eslint-plugin-flowtype": "^4.3.0",
     "flow-bin": "^0.107.0",
+    "parcel": "^1.12.3",
     "prettier": "^1.18.2"
   },
   "dependencies": {
