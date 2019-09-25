@@ -1,0 +1,35 @@
+{
+  "name": "shared-types",
+  "version": "1.0.0",
+  "description": "shared types between client and server (flow)",
+  "main": "src/index.js",
+  "scripts": {
+    "flow:test:code": "npx flow .",
+    "eslint:test:code": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobileFight/shared-types.git"
+  },
+  "keywords": [
+    "flow",
+    "types"
+  ],
+  "author": "Shelomanov Dmitry <userbq201@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mobileFight/shared-types/issues"
+  },
+  "homepage": "https://github.com/mobileFight/shared-types#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "flow-bin": "^0.107.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@atomix/eslint-config": "^7.1.0",
+    "eslint-config-prettier": "^6.3.0"
+  }
+}
