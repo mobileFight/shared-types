@@ -2,10 +2,11 @@
   "name": "shared-types",
   "version": "1.0.0",
   "description": "shared types between client and server (flow)",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "flow:test:code": "npx flow .",
-    "eslint:test:code": "npx eslint ."
+    "eslint:test:code": "npx eslint .",
+    "build": "npx babel src/index.js --out-file lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/mobileFight/shared-types#readme",
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-flow": "^7.0.0",
     "babel-eslint": "^10.0.3",
