@@ -6,3 +6,5 @@ export const QuestStates = {
   completed: 3,
   notAvailable: 4,
 }
+
+export type QuestStatesType = $Values<typeof QuestStates>

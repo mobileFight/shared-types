@@ -12,3 +12,5 @@ export const EquipmentsScheme = {
   ring: 8,
   suspension: 9,
 }
+
+export type EquipmentsType = $Values<typeof EquipmentsScheme>
