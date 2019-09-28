@@ -1,6 +1,6 @@
 {
   "name": "shared-types",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "shared types between client and server (flow)",
   "main": "lib/index.js",
   "scripts": {
