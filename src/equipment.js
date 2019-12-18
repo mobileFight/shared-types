@@ -14,3 +14,10 @@ export const EquipmentsScheme = {
 }
 
 export type EquipmentsType = $Values<typeof EquipmentsScheme>
+
+export const EquipmentStyles = {
+  damage: 0,
+  armor: 1,
+}
+
+export type EquipmentStylesType = $Values<typeof EquipmentStyles>
