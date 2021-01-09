@@ -1,9 +1,11 @@
 module.exports = {
-  extends: ["prettier", "plugin:flowtype/recommended", "@atomix/eslint-config"],
-  parser: "babel-eslint",
-  globals: {
-    grecaptcha: true,
-  },
+  extends: [
+    "@atomix/eslint-config",
+    "prettier/@typescript-eslint",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+  ],
+  parser: "@typescript-eslint/parser",
   rules: {
     "no-use-before-define": [
       "error",
@@ -14,6 +16,6 @@ module.exports = {
       },
     ],
     quotes: "off",
+    "no-shadow": "warn",
   },
-  plugins: ["flowtype"],
 }
